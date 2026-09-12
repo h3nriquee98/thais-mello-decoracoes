@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thais-mello-decoracoes.vercel.app/sitemap.xml
