@@ -1,0 +1,6 @@
+.claude/
+.codex/
+.agents/
+.impeccable/
+node_modules/
+*.log
