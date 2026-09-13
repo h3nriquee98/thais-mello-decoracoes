@@ -674,16 +674,18 @@ h2,h3{ font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacin
   /* Mini Wedding: responsive video background */
   #mini-wedding { position:relative; isolation:isolate; overflow:hidden; min-height:640px; display:flex; align-items:center; background:#211b13; }
   #mini-wedding .mini-video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:-2; pointer-events:none; }
-  #mini-wedding::before { content:""; position:absolute; inset:0; background:linear-gradient(90deg,rgba(15,12,8,.78),rgba(15,12,8,.48) 60%,rgba(15,12,8,.25)); z-index:-1; }
-  #mini-wedding .wrap { width:100%; }
+  #mini-wedding::before { content:""; position:absolute; inset:0; background:linear-gradient(90deg,rgba(15,12,8,.76) 0%,rgba(15,12,8,.64) 28%,rgba(15,12,8,.18) 52%,rgba(15,12,8,.02) 75%); z-index:-1; }
+  #mini-wedding .wrap { width:100%; max-width:none; padding-inline:clamp(28px,3.2vw,64px); }
   #mini-wedding .feature { display:block; }
-  #mini-wedding .feature-text { max-width:680px; }
+  #mini-wedding .feature-text { max-width:440px; margin-right:auto; text-align:left; text-shadow:0 1px 4px rgba(0,0,0,.35); }
   #mini-wedding h2, #mini-wedding p, #mini-wedding li { color:#fff; }
   #mini-wedding .eyebrow { color:#f0d89b; }
   #mini-wedding .feature-list li { border-color:rgba(255,255,255,.3); }
   @media(max-width:767px) {
     #mini-wedding { min-height:760px; }
-    #mini-wedding::before { background:rgba(15,12,8,.62); }
+    #mini-wedding::before { background:linear-gradient(180deg,rgba(15,12,8,.28),rgba(15,12,8,.64) 30%,rgba(15,12,8,.64) 70%,rgba(15,12,8,.28)); }
+    #mini-wedding .wrap { padding-inline:28px; }
+    #mini-wedding .feature-text { max-width:100%; }
   }
 </style>
 </head>
