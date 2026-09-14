@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://thais-mello-decoracoes.vercel.app/sitemap.xml
+Sitemap: https://thaismellodecoracoes.vercel.app/sitemap.xml
