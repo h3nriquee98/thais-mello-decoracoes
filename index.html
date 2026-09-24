@@ -88,6 +88,8 @@
     --gold:#B8922A;
     --gold-soft:#D4B97A;
     --gold-bright:#9A7520;
+    --gold-text:#826319;
+    --gold-hover:#A6832A;
     --line:#DED5C2;
     --radius:20px;
     --shadow-md:0px 18px 40px -18px rgba(90,60,10,.18);
@@ -113,7 +115,7 @@ h2,h3{ font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacin
     font-weight:500;
     letter-spacing:.24em;
     text-transform:uppercase;
-    color:var(--gold);
+    color:var(--gold-text);
     display:inline-flex;
     align-items:center;
     gap:10px;
@@ -177,14 +179,14 @@ h2,h3{ font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacin
     color:var(--ink);
     white-space:nowrap;
   }
-  .logo em{ font-style:italic; color:var(--gold); }
+  .logo em{ font-style:italic; color:var(--gold-text); }
   .nav-links{ display:flex; gap:22px; font-size:13px; font-weight:500; flex-wrap:wrap; }
   .nav-links a{ position:relative; color:var(--ink-soft); transition:color .2s; white-space:nowrap; padding-bottom:2px; }
   .nav-links a::after{
     content:''; position:absolute; left:0; right:100%; bottom:-2px; height:1px; background:var(--gold);
     transition:right .3s cubic-bezier(0.16,1,0.3,1);
   }
-  .nav-links a:hover{ color:var(--gold); }
+  .nav-links a:hover{ color:var(--gold-text); }
   .nav-links a:hover::after{ right:0; }
   .nav-cta{
     background:var(--gold);
@@ -198,7 +200,7 @@ h2,h3{ font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacin
     transition:transform .18s cubic-bezier(0.16,1,0.3,1), background .18s ease, box-shadow .25s ease;
     flex-shrink:0;
   }
-  .nav-cta:hover{ transform:translateY(-2px); background:var(--gold-bright); box-shadow:0 12px 26px -14px rgba(90,60,10,.5); }
+  .nav-cta:hover{ transform:translateY(-2px); background:var(--gold-hover); box-shadow:0 12px 26px -14px rgba(90,60,10,.5); }
   .nav-cta:active{ transform:translateY(0) scale(.96); transition-duration:.1s; }
   @media (max-width:1000px){ .nav-links{ display:none; } }
 
@@ -288,7 +290,7 @@ h2,h3{ font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacin
   .cta-row{
     display:flex;
     align-items:center;
-    justify-content:flex-end;
+    justify-content:flex-start;
     flex-wrap:wrap;
     gap:12px;
   }
@@ -308,7 +310,7 @@ h2,h3{ font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacin
   .btn:hover{ transform:translateY(-2px); }
   .btn:active{ transform:translateY(0) scale(.97); transition-duration:.1s; }
   .btn-primary{ background:var(--gold); color:#12100B; }
-  .btn-primary:hover{ background:var(--gold-bright); box-shadow:0 14px 30px -16px rgba(90,60,10,.55); }
+  .btn-primary:hover{ background:var(--gold-hover); box-shadow:0 14px 30px -16px rgba(90,60,10,.55); }
   .btn-ghost{ border-color:rgba(243,236,221,.55); color:#F3ECDD; }
   .btn-ghost:hover{ border-color:#F3ECDD; }
   .btn svg{ display:none; }
@@ -363,7 +365,7 @@ h2,h3{ font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacin
   }
   .step{ padding:32px 22px; border-right:1px solid var(--line); }
   .step:last-child{ border-right:none; }
-  .step-num{ font-family:'Bodoni Moda', serif; font-style:italic; font-size:26px; color:var(--gold); display:block; margin-bottom:14px; }
+  .step-num{ font-family:'Bodoni Moda', serif; font-style:italic; font-size:26px; color:var(--gold-text); display:block; margin-bottom:14px; }
   .step h3{ font-family:'Instrument Sans'; font-weight:600; font-size:16.5px; margin-bottom:8px; color:var(--ink); }
   .step p{ font-size:14.5px; color:var(--ink-soft); }
   @media (max-width:860px){
@@ -396,7 +398,7 @@ h2,h3{ font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacin
     border-radius:50%;
     margin-bottom:22px;
     display:flex; align-items:center; justify-content:center;
-    font-family:'Bodoni Moda', serif; font-style:italic; color:var(--gold); font-size:17px;
+    font-family:'Bodoni Moda', serif; font-style:italic; color:var(--gold-text); font-size:17px;
   }
   .card h3{ font-family:'Bodoni Moda', serif; font-size:22px; font-weight:500; margin-bottom:10px; color:var(--ink); }
   .card p{ color:var(--ink-soft); font-size:15px; }
@@ -423,7 +425,7 @@ h2,h3{ font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacin
   /* WHY */
   .why-grid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
   .why-item{ display:flex; gap:16px; padding:22px 4px; border-bottom:1px solid var(--line); }
-  .why-num{ font-family:'Bodoni Moda', serif; font-style:italic; font-weight:500; font-size:20px; color:var(--gold); flex-shrink:0; }
+  .why-num{ font-family:'Bodoni Moda', serif; font-style:italic; font-weight:500; font-size:20px; color:var(--gold-text); flex-shrink:0; }
   .why-item h3{ font-family:'Instrument Sans'; font-weight:600; font-size:16px; margin-bottom:4px; color:var(--ink); }
   .why-item p{ font-size:14.5px; color:var(--ink-soft); }
   @media (max-width:720px){ .why-grid{ grid-template-columns:1fr; } }
@@ -436,7 +438,7 @@ h2,h3{ font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacin
   .feature-text p{ color:var(--ink-soft); font-size:16px; margin-bottom:14px; }
   .feature-list{ list-style:none; margin-top:20px; display:flex; flex-direction:column; gap:10px; }
   .feature-list li{ font-size:14.5px; color:var(--ink-soft); display:flex; gap:10px; }
-  .feature-list li::before{ content:'✦'; color:var(--gold); flex-shrink:0; }
+  .feature-list li::before{ content:'✦'; color:var(--gold-text); flex-shrink:0; }
   @media (max-width:860px){ .feature{ grid-template-columns:1fr; } }
 
   /* FINAL CTA */
@@ -450,6 +452,74 @@ h2,h3{ font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacin
   .final-cta h2{ font-size:clamp(2rem,4vw,3rem); color:var(--ink); margin-bottom:16px; }
   .final-cta p{ color:var(--ink-soft); max-width:44ch; margin:0 0 30px; font-size:16.5px; }
   .final-cta .cta-row{ justify-content:flex-start; margin-bottom:0; }
+
+  /* PAINEL DO CASAMENTO */
+  .final-cta.painel{ display:grid; grid-template-columns:minmax(0,5fr) minmax(0,7fr); gap:48px; align-items:start; padding:56px 44px; }
+  .painel-intro h2{ font-size:clamp(2rem,3.2vw,2.6rem); text-wrap:balance; }
+  .painel-intro p{ margin-bottom:22px; }
+  .painel-direto{ font-size:15px; }
+  .painel-direto a{ white-space:nowrap; color:var(--gold-text); font-weight:600; text-decoration:underline; text-underline-offset:3px; font-variant-numeric:tabular-nums; }
+  .painel-form{
+    background:var(--bg); border:1px solid var(--line); border-radius:var(--radius);
+    box-shadow:var(--shadow-md); padding:28px; display:flex; flex-direction:column; gap:20px;
+  }
+  .painel-top{ display:flex; align-items:center; gap:12px; padding-bottom:16px; border-bottom:1px solid var(--line); }
+  .painel-titulo{ font-family:'Bodoni Moda', serif; font-size:22px; font-weight:500; margin-right:auto; }
+  .painel-medidor{ display:flex; gap:3px; }
+  .painel-tick{ width:14px; height:6px; border-radius:3px; background:var(--line); transition:background .25s ease; }
+  .painel-tick.is-on{ background:var(--gold); }
+  .painel-contagem{ font-family:'Geist Mono', monospace; font-size:11px; letter-spacing:.08em; color:var(--ink-soft); font-variant-numeric:tabular-nums; min-width:7ch; text-align:right; }
+  .painel-linha{ display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:14px; }
+  .painel-campo{ display:flex; flex-direction:column; gap:7px; }
+  .painel-campo label, .painel-form legend, .painel-rotulo{
+    font-family:'Geist Mono', monospace; font-size:11px; font-weight:500; letter-spacing:.16em;
+    text-transform:uppercase; color:var(--ink-soft);
+  }
+  .painel-campo input{
+    height:48px; box-sizing:border-box; width:100%; padding:0 14px;
+    border:1px solid var(--line); border-radius:12px; background:var(--bg-2);
+    font:inherit; font-size:16px; color:var(--ink);
+  }
+  .painel-campo input::placeholder{ color:var(--ink-soft); }
+  .painel-campo input:focus{ outline:2px solid var(--gold-text); outline-offset:1px; background:var(--bg); }
+  .painel-form fieldset{ border:0; margin:0; padding:0; min-width:0; }
+  .painel-form legend{ padding:0; margin-bottom:10px; }
+  .painel-opcoes{ display:flex; flex-wrap:wrap; gap:8px; }
+  .painel-opt{ position:relative; }
+  .painel-opt input{ position:absolute; opacity:0; width:1px; height:1px; pointer-events:none; }
+  .painel-opt span{
+    display:inline-flex; align-items:center; gap:7px; min-height:44px; box-sizing:border-box; padding:0 16px;
+    border:1px solid var(--line); border-radius:999px; background:var(--bg);
+    font-size:14px; font-weight:500; color:var(--ink-soft); cursor:pointer;
+    transition:background .2s ease, color .2s ease, border-color .2s ease;
+  }
+  .painel-opt span:hover{ border-color:var(--gold-soft); color:var(--ink); }
+  .painel-opt input:checked + span{ background:var(--ink); border-color:var(--ink); color:var(--bg); font-weight:600; }
+  .painel-check input:checked + span{ background:var(--gold); border-color:var(--gold); color:#12100B; }
+  .painel-check input:checked + span::before{
+    content:''; width:9px; height:5px; border-left:2px solid currentColor; border-bottom:2px solid currentColor;
+    transform:translateY(-2px) rotate(-45deg);
+  }
+  .painel-opt input:focus-visible + span{ outline:2px solid var(--gold-text); outline-offset:2px; }
+  .painel-seg{ display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:0; padding:4px; border:1px solid var(--line); border-radius:999px; background:var(--bg-2); }
+  .painel-seg .painel-opt span{ width:100%; justify-content:center; border-color:transparent; background:transparent; padding:0 10px; text-align:center; }
+  .painel-seg .painel-opt input:checked + span{ background:var(--ink); color:var(--bg); }
+  .painel-previa{ display:flex; flex-direction:column; gap:8px; padding-top:18px; border-top:1px dashed var(--line); }
+  .painel-previa p{ margin:0; padding:14px 16px; border-radius:4px 16px 16px 16px; background:var(--bg-2); font-size:15px; line-height:1.55; color:var(--ink); max-width:none; }
+  .painel-enviar{ align-self:stretch; justify-content:center; gap:10px; min-height:52px; font-size:16px; }
+  @media (max-width:860px){
+    .final-cta.painel{ grid-template-columns:1fr; gap:28px; }
+    .painel-intro p{ margin-bottom:14px; }
+  }
+  @media (max-width:560px){
+    .final-cta.painel{ padding:36px 16px; }
+    .painel-form{ padding:20px 16px; }
+    .painel-linha{ grid-template-columns:1fr; }
+    .painel-top{ flex-wrap:wrap; row-gap:8px; }
+    .painel-titulo{ flex-basis:100%; }
+    .painel-seg{ display:flex; flex-wrap:wrap; gap:8px; padding:0; border:0; border-radius:0; background:none; }
+    .painel-seg .painel-opt span{ width:auto; border-color:var(--line); background:var(--bg); padding:0 16px; }
+  }
 
   /* FOOTER */
   footer {
@@ -470,7 +540,7 @@ h2,h3{ font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacin
     content:''; position:absolute; left:0; right:100%; bottom:-2px; height:1px; background:var(--gold);
     transition:right .3s cubic-bezier(0.16,1,0.3,1);
   }
-  .foot-links a:hover{ color:var(--gold); }
+  .foot-links a:hover{ color:var(--gold-text); }
   .foot-links a:hover::after{ right:0; }
 
   .reveal{ opacity:0; transform:translateY(18px); transition:opacity .7s cubic-bezier(0.16,1,0.3,1), transform .7s cubic-bezier(0.16,1,0.3,1); }
@@ -551,7 +621,7 @@ h2,h3{ font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacin
     border:1px solid var(--gold-soft);
     border-radius:50%;
     background:var(--bg-2);
-    color:var(--gold);
+    color:var(--gold-text);
     cursor:pointer;
     transition:background .2s ease, color .2s ease, transform .2s ease, border-color .2s ease;
   }
@@ -743,7 +813,7 @@ h2,h3{ font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacin
     </div>
     <div class="hero-content">
       <span class="eyebrow">Franca · SP · Decoração de casamentos</span>
-      <h1 class="hero-brand">Thais Mello <em>Decorações</em></h1>
+      <h1 class="hero-brand">Thaís Mello <em>Decorações</em></h1>
       <p class="hero-tagline">Decoração que emociona antes mesmo da festa começar.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="https://wa.me/5516992438041?text=Oi%2C%20Tha%C3%ADs!%20Vi%20a%20p%C3%A1gina%20e%20queria%20saber%20mais%20sobre%20decora%C3%A7%C3%A3o%20de%20casamento." target="_blank" rel="noopener">
@@ -768,7 +838,7 @@ h2,h3{ font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacin
     <!-- Gallery 1: Mesas de Destaque -->
     <div class="gallery-subhead reveal" style="margin-top:48px; margin-bottom:20px;">
         <span class="chip" style="display:inline-block; margin-bottom:10px;">Galeria I</span>
-        <h3 style="font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacing:-0.02em; font-size:24px; color:var(--gold);  margin-bottom:6px;">Mesa do Bolo</h3>
+        <h3 style="font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacing:-0.02em; font-size:24px; color:var(--gold-text);  margin-bottom:6px;">Mesa do Bolo</h3>
       </div>
     <div class="coverflow reveal" id="gallery-festas-1">
 <div class="coverflow-item">
@@ -861,7 +931,7 @@ h2,h3{ font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacin
     <!-- Gallery 2: Ambientações & Detalhes -->
     <div class="gallery-subhead reveal" style="margin-top:48px; margin-bottom:20px;">
         <span class="chip" style="display:inline-block; margin-bottom:10px;">Galeria II</span>
-        <h3 style="font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacing:-0.02em; font-size:24px; color:var(--gold);  margin-bottom:6px;">Detalhes que encantam</h3>
+        <h3 style="font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacing:-0.02em; font-size:24px; color:var(--gold-text);  margin-bottom:6px;">Detalhes que encantam</h3>
       </div>
     <div class="coverflow reveal" id="gallery-festas-2">
 
@@ -1156,7 +1226,7 @@ h2,h3{ font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacin
 
       <div class="gallery-subhead reveal" style="margin-top:48px; margin-bottom:20px;">
         <span class="chip" style="display:inline-block; margin-bottom:10px;">Coleção Clássica & Alta Estatura</span>
-        <h3 style="font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacing:-0.02em; font-size:24px; color:var(--gold);  margin-bottom:6px;">Arranjos Altos, Candelabros & Design Escultural</h3>
+        <h3 style="font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacing:-0.02em; font-size:24px; color:var(--gold-text);  margin-bottom:6px;">Arranjos Altos, Candelabros & Design Escultural</h3>
         <p style="font-size:14.5px; color:var(--ink-soft); line-height:1.5;">Imponência de peças nobres em ouro envelhecido, brilho de cristais, orquídeas e copos-de-leite alongados para recepções marcantes.</p>
       </div>
 
@@ -1213,7 +1283,7 @@ h2,h3{ font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacin
 
       <div class="gallery-subhead reveal" style="margin-bottom:20px;">
         <span class="chip" style="display:inline-block; margin-bottom:10px;">Coleção Rústico Chic & Intimista</span>
-        <h3 style="font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacing:-0.02em; font-size:24px; color:var(--gold);  margin-bottom:6px;">Mesas ao Ar Livre, Madeira Nobre & Delicadeza</h3>
+        <h3 style="font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacing:-0.02em; font-size:24px; color:var(--gold-text);  margin-bottom:6px;">Mesas ao Ar Livre, Madeira Nobre & Delicadeza</h3>
         <p style="font-size:14.5px; color:var(--ink-soft); line-height:1.5;">Bases em toras de madeira maciça, sousplats de fibra trançada, arranjos aquário esféricos, nuvens de mosquitinho e a mesa dos noivos.</p>
       </div>
 
@@ -1372,7 +1442,6 @@ h2,h3{ font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacin
         <div class="chip-row">
           <span class="chip">Clássico & Elegante</span>
           <span class="chip">Rústico Chique</span>
-          <span class="chip">Boho</span>
           <span class="chip">Moderno Minimalista</span>
           <span class="chip solo">+ um projeto exclusivo pra vocês</span>
         </div>
@@ -1447,7 +1516,7 @@ h2,h3{ font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacin
     <div class="wrap">
       <div class="gallery-subhead reveal" style="margin-top:0; margin-bottom:20px;">
         <span class="chip" style="display:inline-block; margin-bottom:10px;">Galeria</span>
-        <h3 style="font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacing:-0.02em; font-size:24px; color:var(--gold); margin-bottom:6px;">Mini Wedding &amp; Celebrações Intimistas</h3>
+        <h3 style="font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacing:-0.02em; font-size:24px; color:var(--gold-text); margin-bottom:6px;">Mini Wedding &amp; Celebrações Intimistas</h3>
       </div>
       <div class="coverflow reveal" id="gallery-mini-wedding">
         <div class="coverflow-item">
@@ -1469,15 +1538,72 @@ h2,h3{ font-family:'Instrument Sans', sans-serif; font-weight:600; letter-spacin
   <!-- CTA FINAL -->
   <section id="contato">
     <div class="wrap">
-      <div class="final-cta reveal">
-        <span class="eyebrow">Vamos conversar sobre o seu casamento</span>
-        <h2>Conta a data pra gente<br>começar o projeto.</h2>
-        <p>Manda uma mensagem no WhatsApp com a data e o local. A Thaís te responde com os próximos passos.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="https://wa.me/5516992438041?text=Oi%2C%20Tha%C3%ADs!%20Vi%20a%20p%C3%A1gina%20e%20queria%20saber%20mais%20sobre%20decora%C3%A7%C3%A3o%20de%20casamento." target="_blank" rel="noopener">
-            (16) 99243-8041
-          </a>
+      <div class="final-cta painel reveal">
+        <div class="painel-intro">
+          <span class="eyebrow">Vamos conversar sobre o seu casamento</span>
+          <h2>Conta a data pra gente começar o projeto.</h2>
+          <p>Monte o painel do seu casamento e a mensagem para a Thaís já sai pronta no WhatsApp. Nada é obrigatório: preencha só o que vocês já sabem.</p>
+          <p class="painel-direto">Prefere só mandar um oi? <a href="https://wa.me/5516992438041?text=Oi%2C%20Tha%C3%ADs!%20Vi%20a%20p%C3%A1gina%20e%20queria%20saber%20mais%20sobre%20decora%C3%A7%C3%A3o%20de%20casamento." target="_blank" rel="noopener">(16) 99243-8041</a></p>
         </div>
+
+        <form class="painel-form" id="painel" novalidate>
+          <div class="painel-top">
+            <span class="painel-titulo">Painel do casamento</span>
+            <span class="painel-medidor" aria-hidden="true">
+              <span class="painel-tick"></span><span class="painel-tick"></span><span class="painel-tick"></span><span class="painel-tick"></span><span class="painel-tick"></span>
+            </span>
+            <span class="painel-contagem" id="painel-contagem">0 de 5</span>
+          </div>
+
+          <div class="painel-linha">
+            <div class="painel-campo">
+              <label for="painel-data">Data</label>
+              <input id="painel-data" name="data" type="text" autocomplete="off" placeholder="ex.: 14/03/2027 ou março de 2027">
+            </div>
+            <div class="painel-campo">
+              <label for="painel-local">Local</label>
+              <input id="painel-local" name="local" type="text" autocomplete="off" placeholder="Cidade ou espaço do evento">
+            </div>
+          </div>
+
+          <fieldset>
+            <legend>Formato</legend>
+            <div class="painel-opcoes painel-seg">
+              <label class="painel-opt"><input type="radio" name="formato" value="Casamento"><span>Casamento</span></label>
+              <label class="painel-opt"><input type="radio" name="formato" value="Mini Wedding"><span>Mini Wedding</span></label>
+              <label class="painel-opt"><input type="radio" name="formato" value="Festa de 15 anos"><span>15 anos</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Ambientes</legend>
+            <div class="painel-opcoes">
+              <label class="painel-opt painel-check"><input type="checkbox" name="ambientes" value="cerimônia"><span>Cerimônia</span></label>
+              <label class="painel-opt painel-check"><input type="checkbox" name="ambientes" value="recepção"><span>Recepção</span></label>
+              <label class="painel-opt painel-check"><input type="checkbox" name="ambientes" value="mesa de bolo e doces"><span>Mesa de bolo e doces</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Estilo</legend>
+            <div class="painel-opcoes">
+              <label class="painel-opt"><input type="radio" name="estilo" value="Clássico &amp; Elegante"><span>Clássico &amp; Elegante</span></label>
+              <label class="painel-opt"><input type="radio" name="estilo" value="Rústico Chique"><span>Rústico Chique</span></label>
+              <label class="painel-opt"><input type="radio" name="estilo" value="Moderno Minimalista"><span>Moderno Minimalista</span></label>
+              <label class="painel-opt"><input type="radio" name="estilo" value="Projeto exclusivo"><span>Projeto exclusivo</span></label>
+            </div>
+          </fieldset>
+
+          <div class="painel-previa">
+            <span class="painel-rotulo" id="painel-msg-rotulo">Mensagem que vai para o WhatsApp</span>
+            <p id="painel-msg" aria-live="polite" aria-labelledby="painel-msg-rotulo">Oi, Thaís! Vi a página e queria saber mais sobre decoração de casamento.</p>
+          </div>
+
+          <a class="btn btn-primary painel-enviar" id="painel-enviar" href="https://wa.me/5516992438041?text=Oi%2C%20Tha%C3%ADs!%20Vi%20a%20p%C3%A1gina%20e%20queria%20saber%20mais%20sobre%20decora%C3%A7%C3%A3o%20de%20casamento." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.1A8 8 0 1 1 20 11.5z"/></svg>
+            Enviar no WhatsApp
+          </a>
+        </form>
       </div>
     </div>
   </section>
@@ -1685,6 +1811,55 @@ items.forEach(i=>io.observe(i));
       }
     }, { rootMargin:'400px 0px' });
     observer.observe(video);
+  })();
+</script>
+<script>
+  (function(){
+    var form = document.getElementById('painel');
+    if(!form) return;
+    var WA = 'https://wa.me/5516992438041?text=';
+    var PADRAO = 'Oi, Thaís! Vi a página e queria saber mais sobre decoração de casamento.';
+    var msg = document.getElementById('painel-msg');
+    var enviar = document.getElementById('painel-enviar');
+    var contagem = document.getElementById('painel-contagem');
+    var ticks = form.querySelectorAll('.painel-tick');
+
+    function valor(nome){
+      var el = form.querySelector('input[name="' + nome + '"]:checked');
+      return el ? el.value : '';
+    }
+    function lista(itens){
+      if(itens.length < 2) return itens.join('');
+      return itens.slice(0, -1).join(', ') + ' e ' + itens[itens.length - 1];
+    }
+
+    function atualizar(){
+      var data = form.elements.data.value.trim();
+      var local = form.elements.local.value.trim();
+      var formato = valor('formato');
+      var estilo = valor('estilo');
+      var ambientes = Array.prototype.map.call(form.querySelectorAll('input[name="ambientes"]:checked'), function(el){ return el.value; });
+
+      var partes = [];
+      if(data) partes.push('Data: ' + data + '.');
+      if(local) partes.push('Local: ' + local + '.');
+      if(formato) partes.push('Formato: ' + formato + '.');
+      if(ambientes.length) partes.push('Ambientes: ' + lista(ambientes) + '.');
+      if(estilo) partes.push('Estilo: ' + estilo + '.');
+
+      var texto = partes.length ? 'Oi, Thaís! Vi a página e queria conversar sobre a decoração. ' + partes.join(' ') : PADRAO;
+      msg.textContent = texto;
+      enviar.href = WA + encodeURIComponent(texto);
+
+      var preenchidos = [data, local, formato, ambientes.length, estilo].filter(Boolean).length;
+      contagem.textContent = preenchidos + ' de 5';
+      Array.prototype.forEach.call(ticks, function(t, i){ t.classList.toggle('is-on', i < preenchidos); });
+    }
+
+    form.addEventListener('input', atualizar);
+    form.addEventListener('change', atualizar);
+    form.addEventListener('submit', function(e){ e.preventDefault(); enviar.click(); });
+    atualizar();
   })();
 </script>
 </body>

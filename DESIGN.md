@@ -21,6 +21,12 @@ colors:
   gold-bright:
     raw: "#9A7520"
     purpose: "High-contrast interaction states (hover), primary callouts, and gallery labels"
+  gold-text:
+    raw: "#826319"
+    purpose: "Gold for text and icons on light backgrounds (5.4:1 on bg, 4.8:1 on bg-2); --gold alone fails as text"
+  gold-hover:
+    raw: "#A6832A"
+    purpose: "Hover background for gold buttons with dark text (5.3:1); replaces gold-bright on buttons"
   line:
     raw: "#DED5C2"
     purpose: "Structural dividers, borders, and light UI boundaries"
@@ -76,7 +82,7 @@ A marca Thaís Mello Decorações comunica luxo afetuoso, classicismo atemporal 
 A paleta repudia o preto absoluto e o branco absoluto, substituindo o alto contraste agressivo pelo calor tátil e reflexos terrosos/metálicos:
 - **Canvas Tonal:** Não existe o branco digital puro `#FFFFFF`. O canvas começa em `#FAFAF8` (Off-white levemente quente) descendo para a âncora de backgrounds secundários `#F2EEE7`, lembrando o tom de um pergaminho premium.
 - **Tintas de Leitura:** Textos não utilizam preto puro, operando em `#1A1207` (Um marrom profundo oxidado) para contraste central, caindo para `#6B5F47` para hierarquias de suporte e parágrafos estruturais maiores, simulando uma impressão sépia luxuosa.
-- **Ouro Estrutural:** O sistema gira em volta do Dourado – variando do pálido sutil `#D4B97A` no Hero (Taglines itálicas) ao peso de interação (`#B8922A`) até alcançar contraste alto em hover (`#9A7520`). Esses tons controlam tudo: botões primários, separações de eixo e badges suspensas. Coroando tudo existe o `#DED5C2` (Line) para divisórias físicas delicadas.
+- **Ouro Estrutural:** O sistema gira em volta do Dourado – variando do pálido sutil `#D4B97A` no Hero (Taglines itálicas) ao peso de interação (`#B8922A`) até alcançar contraste alto em hover (`#9A7520`). Esses tons controlam tudo: botões primários, separações de eixo e badges suspensas. Como **texto** sobre fundos claros, use `--gold-text` (`#826319`), pois `--gold` fica em 2,8:1 e não é legível em tamanhos pequenos; em fundos escuros, use `--gold-soft`. Botões dourados levam texto escuro `#12100B` e, no hover, fundo `--gold-hover` (`#A6832A`). Coroando tudo existe o `#DED5C2` (Line) para divisórias físicas delicadas.
 
 ## Imagery & Elevation
 O impacto imersivo vem dos registros de autoria, e não de manipulação de software em tempo real:
