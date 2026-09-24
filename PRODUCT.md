@@ -37,7 +37,7 @@ O primeiro contato acontece pelo WhatsApp. O cliente informa data, local e o cli
 
 ## Evidence on Hand
 
-- Landing page e portfólio de imagens incorporados em `thais-mello-decoracoes-final.html`.
+- Landing page e portfólio de imagens publicados em `index.html`.
 - Não há depoimentos, preços, métricas, certificações ou parcerias confirmados para criar ou alegar além do conteúdo existente.
 
 ## Product Principles

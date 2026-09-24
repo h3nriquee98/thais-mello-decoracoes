@@ -20,11 +20,11 @@ const MIME_TYPES = {
 
 const server = http.createServer((req, res) => {
   const cleanUrl = decodeURIComponent(req.url.split('?')[0]);
-  let requestedPath = cleanUrl === '/' ? 'thais-mello-decoracoes-final.html' : cleanUrl.replace(/^\/+/, '');
+  let requestedPath = cleanUrl === '/' ? 'index.html' : cleanUrl.replace(/^\/+/, '');
   let filePath = path.join(__dirname, requestedPath);
 
   if (!fs.existsSync(filePath) || fs.statSync(filePath).isDirectory()) {
-    filePath = path.join(__dirname, 'thais-mello-decoracoes-final.html');
+    filePath = path.join(__dirname, 'index.html');
   }
 
   const ext = path.extname(filePath).toLowerCase();
